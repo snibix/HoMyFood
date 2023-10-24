@@ -1,0 +1,13 @@
+.l-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  &__image {
+    width: min(197px, 100%);
+    padding: 0 19px 0 16px;
+  }
+}

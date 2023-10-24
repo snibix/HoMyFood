@@ -1,0 +1,11 @@
+.booking {
+  background-color: $bg-primary-color;
+  text-align: center;
+  padding: 30px 26px;
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__description {
+    margin-bottom: 20px;
+  }
+}

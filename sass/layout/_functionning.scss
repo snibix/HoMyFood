@@ -1,0 +1,46 @@
+.functionning {
+  padding: 20px;
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0.75em;
+  }
+  &__card {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: $bg-primary-color;
+    padding: 20px;
+    padding-left: 1.5em;
+    border-radius: 20px;
+    position: relative;
+  }
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__icon {
+    width: 2em;
+    font-size: 1.2em;
+    text-align: center;
+    color: #7e7e7e;
+    &--primary {
+      color: $primary-color;
+    }
+  }
+}

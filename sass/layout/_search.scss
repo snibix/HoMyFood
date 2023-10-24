@@ -1,0 +1,11 @@
+.search {
+  display: flex;
+  gap: 17px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-location;
+  &__location {
+    display: inline-block;
+  }
+}
