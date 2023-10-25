@@ -18,6 +18,16 @@
   &__article {
     border-radius: 15px;
     background-color: white;
+    position: relative;
+  }
+  &__badge {
+    position: absolute;
+    top: 0.9em;
+    right: 0.9em;
+    color: #008766;
+    background: $bg-badge-color;
+    font-size: 14px;
+    padding: 0.4em 0.7em;
   }
   &__content {
     display: flex;

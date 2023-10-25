@@ -82,6 +82,16 @@ li {
 .restaurants__article {
   border-radius: 15px;
   background-color: white;
+  position: relative;
+}
+.restaurants__badge {
+  position: absolute;
+  top: 0.9em;
+  right: 0.9em;
+  color: #008766;
+  background: #99e2d0;
+  font-size: 14px;
+  padding: 0.4em 0.7em;
 }
 .restaurants__content {
   display: flex;
