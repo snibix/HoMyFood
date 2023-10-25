@@ -1,0 +1,18 @@
+.l-footer {
+  padding: 22px 25px;
+  background: $bg-footer-color;
+  color: white;
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 7px;
+  }
+  &__icon {
+    width: 1.8em;
+    font-size: 0.8em;
+  }
+}
