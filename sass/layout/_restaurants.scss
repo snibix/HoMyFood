@@ -40,5 +40,24 @@
   }
   &__icon {
     font-size: 1.25em;
+    position: absolute;
+    font-size: 25px;
+    top: 260px;
+    right: 20px;
+    &:hover {
+      position: absolute;
+      color: $primary-color;
+      font-weight: bold;
+      transition: 0.5s;
+      opacity: 1;
+      color: transparent;
+      background-clip: text;
+      background: linear-gradient(
+        193deg,
+        $primary-color -11.44%,
+        $secondary-color 123.93%
+      );
+      -webkit-background-clip: text;
+    }
   }
 }

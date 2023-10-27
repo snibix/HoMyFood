@@ -110,6 +110,21 @@ li {
 }
 .restaurants__icon {
   font-size: 1.25em;
+  position: absolute;
+  font-size: 25px;
+  top: 260px;
+  right: 20px;
+}
+.restaurants__icon:hover {
+  position: absolute;
+  color: #9356dc;
+  font-weight: bold;
+  transition: 0.5s;
+  opacity: 1;
+  color: transparent;
+  background-clip: text;
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  -webkit-background-clip: text;
 }
 
 .functionning {
