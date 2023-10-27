@@ -10,4 +10,7 @@
     width: min(197px, 100%);
     padding: 0 19px 0 16px;
   }
+  @media screen and (min-width: 1024px) {
+    padding: 30px 0;
+  }
 }

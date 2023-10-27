@@ -44,4 +44,22 @@
       color: $primary-color;
     }
   }
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px 180px;
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__cards {
+      display: flex;
+      flex-direction: row;
+      gap: 35px;
+    }
+    &__card {
+      padding: 20px 50px;
+      padding-left: 1.3em;
+    }
+  }
 }
