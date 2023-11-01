@@ -1,0 +1,21 @@
+.icon {
+  font-size: 1.25em;
+  font-size: 25px;
+
+  &:hover {
+    position: absolute;
+    color: $primary-color;
+    font-weight: bold;
+    transition: 0.5s;
+    opacity: 1;
+    cursor: pointer;
+    color: transparent;
+    background-clip: text;
+    background: linear-gradient(
+      193deg,
+      $primary-color -11.44%,
+      $secondary-color 123.93%
+    );
+    -webkit-background-clip: text;
+  }
+}
