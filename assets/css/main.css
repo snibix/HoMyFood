@@ -322,6 +322,11 @@ li {
   gap: 40px;
   padding: 14px 89px 13px 17px;
 }
+.page-restaurant__header__content {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
 .page-restaurant__icon {
   width: 2em;
   font-size: 1.5em;
@@ -390,4 +395,36 @@ li {
   min-width: 186px;
   padding: 16px;
   margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  .page-restaurant__header {
+    padding: 30px 100px 32px 17px;
+  }
+  .page-restaurant__header__content {
+    width: 60%;
+  }
+  .page-restaurant__image {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .page-restaurant__content {
+    width: 1200px;
+    margin: auto;
+    margin-top: -40px;
+  }
+  .page-restaurant__content__header {
+    justify-content: center;
+  }
+  .page-restaurant__heart {
+    right: 500px;
+  }
+  .page-restaurant__starter {
+    width: 60%;
+    margin: auto;
+  }
+  .page-restaurant__starter__title {
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=main.css.map */
