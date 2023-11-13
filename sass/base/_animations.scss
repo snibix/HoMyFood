@@ -28,7 +28,7 @@
   width: 100%;
   height: 100%;
   z-index: 999;
-  animation: stopLoader 2s forwards ease-in-out;
+  animation: stopLoader 1.8s forwards ease-in-out;
 }
 .loader {
   width: 50px; // Largeur du rond
@@ -44,7 +44,7 @@
 }
 //*****************************************************Fin*********************************************************/
 
-//*****************************************************Anim page restaurant*********************************************************/
+//*****************************************************ANIM STARTER*********************************************************/
 @keyframes anim-starter {
   0% {
     transform: scaleY(0);
@@ -56,7 +56,7 @@
 .anim-starter {
   animation: anim-starter 3s;
 }
-
+//*****************************************************ANIM PLATS*********************************************************/
 @keyframes anim-plats {
   0% {
     transform: scaleY(0);
@@ -71,7 +71,7 @@
 .anim-plats {
   animation: anim-plats 3.5s;
 }
-
+//*****************************************************ANIM DESSERTS*********************************************************/
 @keyframes anim-desserts {
   0% {
     transform: scaleY(0);
