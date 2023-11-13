@@ -1,0 +1,43 @@
+// Définir les étapes de l'animation avec @keyframes
+$anim-time: 1000ms;
+@keyframes loader {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes stopLoader {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loader-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  animation: stopLoader 2s forwards ease-in-out;
+}
+.loader {
+  width: 50px; // Largeur du rond
+  height: 50px; // Hauteur du rond
+  border: 5px solid $primary-color; // Couleur et épaisseur de la bordure
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  border-top: 4px solid transparent; // Bordure supérieure transparente
+  border-radius: 50%;
+  animation: loader 1.5s linear infinite;
+}
