@@ -68,16 +68,54 @@
     }
   }
   &__card {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    overflow: hidden;
     background-color: white;
-    padding: 15px;
-    padding-left: 1.5em;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    &__price {
+      margin: 0 1em;
+    }
+    .menu-check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-size: 1em;
+    }
+    &:hover {
+      .menu-check {
+        margin-right: 0;
+        animation: anim-check-menu 0.5s ease-in-out;
+      }
+    }
     &__content {
       display: flex;
       justify-content: space-between;
-      padding-top: 5px;
     }
+    .card-content {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 13px;
+      height: 100%;
+    }
+  }
+  .menu-check {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    margin-right: -4rem;
+    padding: 19px 0px;
+    transition: margin-right 0.3s ease-in-out;
+    color: #ffffff;
+    font-size: 1.7rem;
+    background-color: #99e2d0;
+    border-radius: 0 20px 20px 0;
   }
   &__button {
     min-width: 186px;
