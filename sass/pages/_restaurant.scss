@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-
   &__logo {
     width: 200px;
   }
@@ -21,12 +20,6 @@
   &__icon {
     width: 2em;
     font-size: 1.5em;
-  }
-  &__heart {
-    width: 1.1em;
-    font-size: 1.2em;
-    position: absolute;
-    right: 25px;
   }
   &__content {
     display: flex;
@@ -99,15 +92,13 @@
       object-fit: cover;
     }
     &__content {
-      width: 1200px;
+      max-width: 1050px;
       margin: auto;
       margin-top: -40px;
       &__header {
         justify-content: center;
+        gap: 35px;
       }
-    }
-    &__heart {
-      right: 23%;
     }
     &__starter {
       width: 60%;
