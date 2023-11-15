@@ -9,12 +9,16 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 50px;
     padding: 14px 89px 13px 17px;
     &__content {
       display: flex;
-      justify-content: space-between;
-      width: 70%;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    &__title {
+      text-align: center;
     }
   }
   &__icon {
@@ -34,8 +38,9 @@
     padding-bottom: 40px;
     &__header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: center;
+      gap: 35px;
       padding-top: 32px;
       font-size: 1.25em;
       font-size: 25px;
@@ -82,9 +87,6 @@
   @media screen and (min-width: 1024px) {
     &__header {
       padding: 30px 100px 32px 17px;
-      &__content {
-        width: 60%;
-      }
     }
     &__image {
       width: 100%;
@@ -95,18 +97,6 @@
       max-width: 1050px;
       margin: auto;
       margin-top: -40px;
-      &__header {
-        justify-content: center;
-        gap: 35px;
-      }
-    }
-    &__starter {
-      width: 60%;
-      margin: auto;
-
-      &__title {
-        align-items: flex-start;
-      }
     }
   }
 }
