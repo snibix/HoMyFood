@@ -6,6 +6,10 @@
   justify-content: center;
   background-color: $bg-location;
   &__location {
-    display: inline-block;
+    border: none;
+    background: $bg-location;
+    &:focus {
+      outline: none;
+    }
   }
 }

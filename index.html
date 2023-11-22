@@ -14,14 +14,14 @@
     <div class="loader"></div>
   </div>
   <!--**********************************************Header************************************-->
-  <header class="l-header">
+  <header class="l-header" id="accueil">
     <img class="l-header__image" src="assets/images/logo/ohmyfood.png" alt="">
   </header>
 
   <main class="container">
     <div class="search">
       <i class="fa-solid fa-location-dot"></i>
-      <p class="search__location">Paris, Belleville</p>
+      <input class="search__location" value="Paris, Belleville" />
     </div>
 
     <section class="booking">
@@ -35,9 +35,9 @@
         <h2 class="functionning__title">Fonctionnement</h2>
         <div class="functionning__cards">
           <div class="functionning__card">
-            <span class="functionning__number">1</span><i
-              class="fa-solid fa-mobile-screen-button functionning__icon"></i><span
-              class="functionning__choice">Choisissez
+            <span class="functionning__number">1</span>
+            <i class="fa-solid fa-mobile-screen-button functionning__icon"></i>
+            <span class="functionning__choice">Choisissez
               un
               restaurant</span>
           </div>
@@ -48,9 +48,9 @@
               menu</span>
           </div>
           <div class="functionning__card">
-            <span class="functionning__number">3</span><i
-              class="fa-solid fa-store functionning__icon functionning__icon--primary"></i><span
-              class="fonctionning__choice">Dégustez
+            <span class="functionning__number">3</span>
+            <i class="fa-solid fa-store functionning__icon"></i>
+            <span class="fonctionning__choice">Dégustez
               au
               restaurant</span>
           </div>
@@ -132,12 +132,12 @@
   </main>
   <!--******************************************Footer*****************************************-->
   <footer class="l-footer">
-    <h2 class="title l-footer__title">ohmyfood</h2>
+    <h2 class="title l-footer__title"><a href="#accueil">ohmyfood</a></h2>
     <ul class="l-footer__navbar">
-      <li><i class="fa-solid fa-utensils l-footer__icon"></i>Proposer un restaurant</li>
-      <li><i class="fa-solid fa-handshake-angle l-footer__icon"></i>Devenir partenaire</li>
-      <li>Mentions légales</li>
-      <li>Contact</li>
+      <li><a href="#"><i class="fa-solid fa-utensils l-footer__icon"></i>Proposer un restaurant</a></li>
+      <li><a href="#"><i class="fa-solid fa-handshake-angle l-footer__icon"></i>Devenir partenaire</a></li>
+      <li><a href="#">Mentions légales</a></li>
+      <li><a href="mailto:homyfood@gmail.com">Contact</a></li>
     </ul>
   </footer>
 </body>

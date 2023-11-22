@@ -86,14 +86,3 @@
 .anim-desserts {
   animation: anim-desserts 4s;
 }
-//************************************************ANIM CHECK MENU*************************************************************/
-@keyframes anim-check-menu {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}

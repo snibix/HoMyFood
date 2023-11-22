@@ -3,14 +3,12 @@
   flex-direction: column;
   width: 100%;
   &__logo {
-    width: 200px;
+    min-width: 20px;
   }
   &__header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 50px;
-    padding: 14px 89px 13px 17px;
     &__content {
       display: flex;
       align-items: center;
@@ -24,6 +22,7 @@
   &__icon {
     width: 2em;
     font-size: 1.5em;
+    padding-left: 10px;
   }
   &__content {
     display: flex;
@@ -65,6 +64,7 @@
       text-transform: uppercase;
       padding-bottom: 5px;
       font-weight: 100;
+      font-size: 16px;
     }
   }
   &__card {
@@ -75,21 +75,11 @@
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    &:hover .menu-check {
+      margin-right: 0;
+    }
     &__price {
       margin: 0 1em;
-    }
-    .menu-check {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #ffffff;
-      font-size: 1em;
-    }
-    &:hover {
-      .menu-check {
-        margin-right: 0;
-        animation: anim-check-menu 0.5s ease-in-out;
-      }
     }
     &__content {
       display: flex;
@@ -100,22 +90,35 @@
       white-space: nowrap;
       overflow: hidden;
       padding: 13px;
-      height: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
+  .menu-title,
+  .menu-description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .menu-description {
+    font-size: 15px;
+    height: 18px;
+  }
+  .menu-title {
+    font-size: 18px;
+    height: 21px;
+  }
   .menu-check {
-    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 4rem;
-    margin-right: -4rem;
-    padding: 19px 0px;
-    transition: margin-right 0.3s ease-in-out;
+    width: 3rem;
+    margin-right: -3.2rem;
+    padding: 21px 0px;
     color: #ffffff;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     background-color: #99e2d0;
     border-radius: 0 20px 20px 0;
+    transition: margin-right 0.4s ease-in-out;
   }
   &__button {
     min-width: 186px;
